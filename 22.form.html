@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form action="save.html" method="get" enctype="multipart/form-data">
+	<fieldset>
+		<legend>Personal Info</legend>
+		<label>Name:</label>
+		<input type="text" name="sname" placeholder="Enter your name..."value="Divya" autocomplete="off" required pattern="[A-za-Z]{10}" style="height: 40px;width: 100%;background-color: pink;"><br><br>
+		<label>Email:</label>
+		<input type="email" name="semail" placeholder="Enter your email..." value="amatedivya@gamil.com" autocomplete="off"style="height: 40px;width: 100%;background-color: pink;"><br><br>
+		<label>phone</label>
+		<input type="number" name="snumber" placeholder="Enter your number..." value="9704534234" readonly required maxlength="10" minlength="5" style="height: 40px;width: 100%;background-color: pink;"><br><br>
+		<label>DOB</label>
+		<input type="date" name="" required="" min="5" max="10"><br><br>
+		<label>Gender:</label>
+		<input type="radio" name="Gender" value="Male"><b>Male</b>
+		<input type="radio" name="Gender" value="Female" checked><b>Female</b><br><br>
+		<label>Photo</label>
+		<input type="file" name="sphoto" placeholder="Photo..." required>
+	</fieldset>
+	<fieldset>
+		<legend>Address</legend>
+		<label>Full Address</label>
+		<textarea name="saddress" autofocus required maxlength="10" minlength="5" rows="5" cols="50"></textarea><br><br>
+		<label>State</label>
+		<select name="ssatate" autocomplete="off" required>
+			<option>Select</option>	
+			<option value="Maharastra" selected="">Maharastra</option>
+			<option>Rajashtan</option>
+			<option>Hariyana</option>
+		</select><br><br>
+		<label>City:</label>
+		<input type="text" name="scity" placeholder="city.." value="pathardi" autocomplete="off" required maxlength="10" minlength="5"><br><br>
+		<label>Pincode</label>
+		<input type="numbere" name="spincode" placeholder="pincode.." value="414505" readonly required maxlength="10" minlength="5"><br><br>
+	</fieldset>
+	<fieldset>
+		<legend>Login & subject</legend>
+		<label>Subject</label>
+		<input type="checkbox" name="scheckbox" value="html" required><b>HTML</b>
+		<input type="checkbox" name="scheckbox" value="CSS" required><b>CSS</b><br><br>
+		<label>Username:</label>
+		<input type="text" name="susername" placeholder="Username" value="diuuu" readonly required maxlength="10" minlength="5"><br><br>
+		<label>password</label>
+		<input type="password" name="spassword" placeholder="password" value="xxxxxxx" disabled><br><br>
+		<input type="reset">
+		<input type="submit" formaction="myform.html">
+	</fieldset>
+</form>
+</body>
+</html>
